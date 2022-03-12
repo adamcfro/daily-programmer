@@ -10,17 +10,19 @@
  */
 function romanNumeralComparison (str1, str2) {
   let values = {'M': 1000, 'D': 500, 'C': 100, 'L': 50, 'X': 10, 'V': 5, 'I': 1};
-  let total1 = 0;
-  let total2 = 0;
+  let total = 0;
   let splitString1 = str1.split("");
   let splitString2 = str2.split("");
-  for (let i = 0; i < splitString1.length; i++) {
-    let key = splitString1[i];
-    total1 += values[key];
+  let maxLength = str1.length >= str2.length ? str1.length : str2.length;
+  for (let i = 0, j = 0; i < maxLength && j < maxLength; i++, j++) {
+    if (i < str1.length && j < str2.length) {
+      total += values[splitString1[i]];
+      total -= values[splitString2[j]];
+    } else if (i < maxLength) {
+      total += values[splitString1[i]];
+    } else {
+      total -= values[splitString2[j]];
+    }
   }
-  for (let i = 0; i < splitString2.length; i++) {
-    let key = splitString2[i];
-    total2 += values[key];
-  }
-  return total1 < total2;
+  return total < 0;
 }
