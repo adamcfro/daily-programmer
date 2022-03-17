@@ -8,10 +8,10 @@
  * @returns {String} - Returns a character
  */
 function caesarCipher (char, num) {
-  let myChar = char.charCodeAt(0);
-  if (num + myChar > 122) {
-    return String.fromCharCode(num + myChar - 26);
+  let charCode = char.charCodeAt(0);
+  if (num + charCode > 122) {
+    return String.fromCharCode(num + charCode - 26);
   } else {
-    return String.fromCharCode(myChar);
+    return String.fromCharCode(charCode);
   }
 }
