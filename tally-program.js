@@ -12,12 +12,14 @@
 function tallyProgram (str) {
   let scores = {};
   for (let i = 0; i < str.length; i++) {
+    // add or subtract from value if the key already exists
     if (str[i].toLowerCase() in scores) {
       if (str[i] in scores) {
         scores[str[i]] += 1;
       } else {
         scores[str[i].toLowerCase()] -= 1;
       }
+    // create a key if no key exists
     } else {
       if (str[i] === str[i].toLowerCase()) {
         scores[str[i]] = 1;
@@ -26,6 +28,7 @@ function tallyProgram (str) {
       }
     }
   }
+  // convert object to string for display
   let returnObject = JSON.stringify(scores);
   return returnObject.replace(/[{}]/g, '');
 }
