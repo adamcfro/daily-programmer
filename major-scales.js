@@ -1,7 +1,12 @@
 /**
  * This function takes in a scale and a note from the movable do solfege
- * system (Do, Re, Mi, Fa, So, La, Ti), and returns the corresponding
+ * system, and returns the corresponding
  * note of the scale.
+ * The solfege system is a system where every note of a scale is given its own 
+ * unique syllable, which consists of the notes Do, Re, Mi, Fa, So, La, Ti.
+ * Do is the first notes of the scale, Re is 2 steps above Do, Mi is 4 steps, 
+ * Fa is 5 steps, So is 7 steps, La is 9 steps, and Ti is 11.
+ * 
  * 
  * @param {String} scale - The name of a scale
  * @param {String} note - The name of a note
