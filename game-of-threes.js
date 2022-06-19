@@ -1,7 +1,7 @@
 /**
  * This function takes a number as input, and follows a set of rules until
  * the input reaches 1, and returns this number.
- * The rules are:
+ * The rules for A Game of Threes are:
  *   if the number is divisible by 3, divide it by 3.
  *   if it's not, either add 1 or subtract 1 (to make it divisible by 3),
  *   then divide by 3.
