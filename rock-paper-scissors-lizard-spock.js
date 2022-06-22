@@ -1,25 +1,17 @@
 /**
- * This function takes a user input and compares it to a randomly generated
- * computer input, and determines the winner of Rock, Paper, Scissors,
- * Lizard, Spock. Rules:
- *   rock beats scissors
- *   scissors beats paper
- *   paper beats rock
- *   spock beats scissors and rock and loses to lizard and paper
- *   lizard beats spock and paper and loses to rock and scissors
+ * This function takes a user input and compares it to a computer input, and 
+ * determines the winner of Rock, Paper, Scissors, Lizard, Spock. Rules:
+ *   rock beats scissors,
+ *   scissors beats paper,
+ *   paper beats rock,
+ *   spock beats scissors and rock and loses to lizard and paper,
+ *   lizard beats spock and paper and loses to rock and scissors.
  * 
  * @returns {String} - Returns a string displaying the winner
  */
-function rps () {
+function rps (userInput, computerInput) {
   let results = '';
   let choices = ['', 'rock', 'paper', 'scissors', 'lizard', 'Spock'];
-  let userInput = prompt(`Enter number for choice:
-  1) Rock
-  2) Paper
-  3) Scissors
-  4) Lizard
-  5) Spock`);
-  let computerInput = Math.floor(Math.random() * 5) + 1;
   // Same choice is made
   if (choices[userInput] === choices[computerInput]) {
     results = 'Tie!';
@@ -51,8 +43,8 @@ function rps () {
     } else {
       results = 'Player wins!';
     }
-  // Player chooses spock
-  } else {
+  // Player chooses Spock
+  } else if (userInput === 5) {
     if (computerInput === 2 || computerInput === 4) {
       results = 'Computer Wins!';
     } else {
