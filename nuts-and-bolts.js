@@ -1,7 +1,8 @@
 /**
- * This function takes in a variable amount of space delimited value pairs,
- * consisting of an item and the cost of the item. Tracks any changes in price
- * for each item and returns a string representing those price changes.
+ * This function takes in a variable amount of space delimited value pairs
+ * in string format, consisting of an item and the cost of the item. 
+ * Changes in price are tracked for each item and a string representing 
+ * those price changes is returned.
  * 
  * @param  {String} args - A variable amount of space delimited value pairs
  * @returns {String} - Returns a string of items with price changes
