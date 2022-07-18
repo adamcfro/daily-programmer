@@ -34,15 +34,20 @@ function smalpha (str) {
     '--..': 'z'
   };
   let i = 0;
-  let j = 0;
+  let j = 4;
   let convertedStr = '';
   while (j < str.length) {
     if (morseCode.hasOwnProperty(str.substring(i, j))) {
       convertedStr += morseCode[str.substring(i, j)];
       delete morseCode[str.substring(i, j)];
       i = j;
+      j = i + 4;
+    } else {
+      j--;
     }
-    j++;
+    if (j <= 0) {
+      break;
+    }
   }
   return convertedStr;
 }
