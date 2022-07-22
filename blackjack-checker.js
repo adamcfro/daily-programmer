@@ -3,39 +3,36 @@
  * player's hands in Blackjack. Returns a string with the name of the winner
  * and their score.
  * 
- * NOT FINISHED
- * 
  * @param  {...string} args - A variable number of strings
  * @returns {string} - Returns a string representation of the winner and score
  */
-function blackjackChecker (...args) {
+ function blackjackChecker (...args) {
   let highScore = 0;
   let winner;
-  for (let arg of args) {
-    arg = arg.replace(/\s/g, '');
-    arg = arg.split(/[,:]/).filter(element => element);
-    let name = arg[0];
-    let total = [0, 0];
-    for (let i = 1; i < arg.length; i++) {
-      if (arg[i][0] === 'A') {
-        total[0] += 1;
-        total[1] += 11;
-      } else if (arg[i].length > 2) {
-        total[0] += 10;
-        total[1] += 10;
+  for (let playerHand of args) {
+    playerHand = playerHand.replace(/\s/g, '');
+    playerHand = playerHand.split(/[,:]/).filter(element => element);
+    let name = playerHand[0];
+    let playerScore = 0;
+    let aceCount = 0;
+    for (let i = 1; i < playerHand.length; i++) {
+      if (playerHand[i][0] === 'A') {
+        playerScore += 11;
+        aceCount++;
+      } else if (playerHand[i].length > 2) {
+        playerScore += 10;
       } else {
-        total[0] += Number(arg[i][0]);
-        total[1] += Number(arg[i][0]);
+        playerScore += Number(playerHand[i][0]);
       }
     }
-    let playerScore = Math.max.apply(Math, total.filter(function(x){
-      return x <= 21
-    }));
+    while (playerScore > 21 && aceCount > 0) {
+      playerScore -= 10;
+      aceCount--;
+    }
     if (playerScore > highScore) {
       highScore = playerScore;
       winner = `${name}: ${highScore}`;
     }
-    total = [0, 0];
   }
   return winner;
 }
