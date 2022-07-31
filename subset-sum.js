@@ -4,7 +4,7 @@
  * in the array.
  * 
  * @param {Array} arr - A sorted array of numbers
- * @returns {Boolean} - Returns a Boolean
+ * @returns {boolean} - Returns a Boolean
  */
 function subsetSum (arr) {
   let i = 0;

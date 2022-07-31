@@ -4,9 +4,9 @@
  * in the first string parameter is less than the sum of the values 
  * of the second parameter.
  * 
- * @param {String} str1 - First string of Roman Numerals
- * @param {String} str2 - Second string of Roman Numerals
- * @returns {Boolean} - Returns a Boolean
+ * @param {string} str1 - First string of Roman Numerals
+ * @param {string} str2 - Second string of Roman Numerals
+ * @returns {boolean} - Returns a Boolean
  */
 function romanNumeralComparison (str1, str2) {
   let numeralValues = {'M': 1000, 'D': 500, 'C': 100, 'L': 50, 'X': 10, 'V': 5, 'I': 1};

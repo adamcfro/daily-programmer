@@ -3,8 +3,8 @@
  * of the number. The digital root is calculated by summing all the digits,
  * then summing all the digits of the result until only one digit remains.
  * 
- * @param {Number} num - A number parameter
- * @returns {Number} - Returns a single digit number
+ * @param {number} num - A number parameter
+ * @returns {number} - Returns a single digit number
  */
 function sumThemDigits (num) {
   let result = num;
