@@ -6,8 +6,8 @@
  * is uppercase.
  * Returns the sorted scores of a game. 
  * 
- * @param {String} str - A string of letters
- * @returns {String} - Returns a string of sorted scores
+ * @param {string} str - A string of letters
+ * @returns {string} - Returns a string of sorted scores
  */
 function tallyProgram (str) {
   let scores = {};

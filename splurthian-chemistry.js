@@ -3,9 +3,9 @@
  * representing the element. Returns true if both characters from the symbol
  * appear in order in the element name, false otherwise.
  * 
- * @param {String} element - The name of an element
- * @param {String} symbol - A string representation of an element symbol
- * @returns {Boolean} - Returns a Boolean
+ * @param {string} element - The name of an element
+ * @param {string} symbol - A string representation of an element symbol
+ * @returns {boolean} - Returns a Boolean
  */
 function splurthianChemistry (element, symbol) {
   element = element.toLowerCase();

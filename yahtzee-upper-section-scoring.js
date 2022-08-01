@@ -4,7 +4,7 @@
  * Returns the largest sum.
  * 
  * @param {Array} arr - An array of numbers between 1-6
- * @returns {Number} - Returns a sum
+ * @returns {number} - Returns a sum
  */
 function yahtzeeScoring (arr) {
   let diceRolls = {};

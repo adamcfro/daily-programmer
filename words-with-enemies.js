@@ -4,9 +4,9 @@
  * a ratio of 1 for 1, and returns which side has more letters, as well as the
  * unique, unbalanced letters from each side.
  * 
- * @param {String} str1 - First string parameter
- * @param {String} str2 - Second string parameter
- * @returns {String} - Returns a string showing the winner and unique chars
+ * @param {string} str1 - First string parameter
+ * @param {string} str2 - Second string parameter
+ * @returns {string} - Returns a string showing the winner and unique chars
  */
 function wordsWithEnemies (str1, str2) {
   let leftovers1 = '';

@@ -3,9 +3,9 @@
  * from the first by removing one letter. The remaining letters must stay 
  * in the same order.
  * 
- * @param {String} str1 - First string parameter
- * @param {String} str2 - Second string parameter
- * @returns {Boolean} - Returns a Boolean
+ * @param {string} str1 - First string parameter
+ * @param {string} str2 - Second string parameter
+ * @returns {boolean} - Returns a Boolean
  */
 function funnel (str1, str2) {
   let count = 0;
