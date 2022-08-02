@@ -6,8 +6,8 @@
  * the previous iteration on either side of the next letter of the alphabet.
  * Returns a string representation of the ABACABA sequence.
  * 
- * @param {Number} n - Number of iterations
- * @returns {String} - Returns a string
+ * @param {number} n - Number of iterations
+ * @returns {string} - Returns a string
  */
 function abacaba(n) {
   let alphabet = ['a','b','c','d','e','f','g','h','i','j','k','l','m','n','o','p','q','r','s','t','u','v','w','x','y','z'];
