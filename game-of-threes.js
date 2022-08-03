@@ -6,8 +6,8 @@
  *   if it's not, either add 1 or subtract 1 (to make it divisible by 3),
  *   then divide by 3.
  * 
- * @param {Number} num - A number parameter 
- * @returns {Number} - Returns a number (1)
+ * @param {number} num - A number parameter 
+ * @returns {number} - Returns a number (1)
  */
 function gameOfThrees (num) {
   while (num > 1) {
