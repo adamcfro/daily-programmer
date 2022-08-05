@@ -7,9 +7,9 @@
  *  XXYY means that you have a word that contains a sequence of 2 of the
  *  same letters, followed by 2 different matching letters.
  * 
- * @param {String} pattern - A string pattern to match
- * @param {String} str - A string parameter
- * @returns {Boolean} - Returns a Boolean
+ * @param {string} pattern - A string pattern to match
+ * @param {string} str - A string parameter
+ * @returns {boolean} - Returns a Boolean
  */
 function patterns (pattern, str) {
   if (pattern === 'XXYY') {
