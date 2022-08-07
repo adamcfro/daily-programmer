@@ -5,9 +5,9 @@
  * an offensive word, then looks for possible offensive words that might show 
  * up on the board, and alerts the producers of the show.
  * 
- * @param {String} secretWord - First string parameter
- * @param {String} offensiveWord - Second string parameter
- * @returns {Boolean} - Returns a Boolean
+ * @param {string} secretWord - First string parameter
+ * @param {string} offensiveWord - Second string parameter
+ * @returns {boolean} - Returns a Boolean
  */
 function eelOfFortune (secretWord, offensiveWord) {
   let board = '.'.repeat(secretWord.length);
