@@ -1,8 +1,8 @@
 /**
  * Returns the first recurring character in a string.
  * 
- * @param {String} str - A string parameter
- * @returns {String} - Returns a string character
+ * @param {string} str - A string parameter
+ * @returns {string} - Returns a string character
  */
 function firstRecurringCharacter (str) {
   let chars = [];
