@@ -5,8 +5,8 @@
  * Take this sum modulo 10, and if this new sum is 0, then the check digit
  * is 0, otherwise, it is 10 - sum.
  * 
- * @param {Number} num - An 11-digit number
- * @returns {Number} - Returns a number
+ * @param {number} num - An 11-digit number
+ * @returns {number} - Returns a number
  */
 function upcCheck (num) {
   let sum1 = 0;
