@@ -2,8 +2,8 @@
  * This function takes in a string as input, and, using the Atbash Cipher, 
  * returns a newly decrypted string.
  * 
- * @param {String} str - A string parameter
- * @returns {String} - Returns a new string
+ * @param {string} str - A string parameter
+ * @returns {string} - Returns a new string
  */
 function atbashCipher (str) {
   let alphabet = 'abcdefghijklmnopqrstuvwxyz';
