@@ -5,15 +5,17 @@
  * 
  * @param {Array} arr - An array of integers
  * @param {number} target - A target sum
- * @returns {boolean} - Returns true if two integers sum to the target
+ * @returns {Array} - Returns an array of numbers than sum to the target
  */
 function twoSum (arr, target) {
-  for (let i = 0; i < arr.length; i++) {
-    for (let j = 0; j < arr.length; j++) {
-      if (arr[i] + arr[j] === target && i !== j) {
-        return true;
-      }
+  let storageHash = {};
+  let numPairs = [];
+  for (let num in arr) {
+    let addedNum = target - arr[num];
+    if (addedNum in storageHash) {
+      numPairs.push([addedNum, arr[num]]);
     }
+    storageHash[arr[num]] = num;
   }
-  return false;
+  return numPairs;
 }
