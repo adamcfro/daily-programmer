@@ -5,17 +5,17 @@
  * 
  * @param {Array} arr - An array of integers
  * @param {number} target - A target sum
- * @returns {Array} - Returns an array of numbers than sum to the target
+ * @returns {Array} - Returns an array of numbers that sum to the target
  */
 function twoSum (arr, target) {
   let storageHash = {};
-  let numPairs = [];
-  for (let num in arr) {
-    let addedNum = target - arr[num];
-    if (addedNum in storageHash) {
-      numPairs.push([addedNum, arr[num]]);
+  let targetPairs = [];
+  for (let n in arr) {
+    let num = target - arr[n];
+    if (num in storageHash) {
+      targetPairs.push([num, arr[n]]);
     }
-    storageHash[arr[num]] = num;
+    storageHash[arr[n]] = n;
   }
-  return numPairs;
+  return targetPairs;
 }
