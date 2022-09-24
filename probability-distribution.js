@@ -3,7 +3,7 @@
  * dice rolls, displaying a chart with the percentage that each number on the
  * die was rolled. Returns an object containing the results.
  * 
- * @param {*} numRolls - A number representing the amount of simulated dice rolls
+ * @param {number} numRolls - A number representing the amount of simulated dice rolls
  * @returns {object} - Returns an object containing the results of the simulated dice rolls
  */
 function probabilityDistribution (numRolls) {
