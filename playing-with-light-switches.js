@@ -1,12 +1,12 @@
 /**
- * This function takes in a number of lights and an array of ranges.
+ * This function takes in a number, lights, and an array of ranges.
  * All lights start in the off position, and are flipped every time a range
  * passes over the switch. Returns the state of the switches after all ranges
  * (inclusive) have been passed over.
  * 
- * @param {Number} numLights - The number of light switches
+ * @param {number} numLights - The number of light switches
  * @param  {...any/Array} args - A variable number of ranges in an array
- * @returns {String} - Returns a string representation of the state of switches
+ * @returns {string} - Returns a string representation of the state of switches
  */
 function lightSwitches (numLights, ...args) {
   let lightStates = {};
